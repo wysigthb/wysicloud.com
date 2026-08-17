@@ -111,7 +111,12 @@
   border: none;
   background: transparent;
 }
-.service {
+.service:not(:last-child)::after {
+  content: "·";
+  margin-left: 22px;
+  color: #4fc3f7;
+}
+    .service {
   ...
 }
 
